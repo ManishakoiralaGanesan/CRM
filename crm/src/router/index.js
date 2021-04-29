@@ -14,7 +14,6 @@ const routes = [
     path: "/login",
     name: "Login",
     meta: {
-      layout: "content",
       requiresAuth: false,
     },
     component: Login,
@@ -23,7 +22,7 @@ const routes = [
     path: "/register",
     name: "Register",
     meta: {
-      layout: "content",
+
       requiresAuth: false,
     },
     component: Register,
@@ -32,14 +31,14 @@ const routes = [
     path: "/verification-page/:id",
     name: "Verification page",
     meta: {
-      layout: "content",
+
       requiresAuth: false,
     },
     component: VerificationPage,
   },
   
   {
-    path:'/helloworld',
+    path:'/',
     name:"HelloWorld",
     component:HelloWorld,
     meta: {

@@ -1,32 +1,20 @@
 <template>
-  <component :is="layout">
-    <router-view></router-view>
-  </component>
+  <v-app>
+    <v-app-bar app color="primary" dark> </v-app-bar>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import DefaultLayout from "./layout/DefaultLayout";
-import ContentLayout from "./layout/ContentLayout";
-
 export default {
   name: "App",
 
-  components: {
-    DefaultLayout,
-    ContentLayout,
-  },
+  components: {},
 
-  computed: {
-    layout() {
-      return (this.$route.meta.layout || "default") + "-layout";
-    },
-  },
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style scoped>
-.app,
-.content {
-  height: 100%;
-}
-</style>
