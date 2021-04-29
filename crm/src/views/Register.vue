@@ -38,8 +38,8 @@
         outlined
       ></v-text-field>
     </v-card-content>
-    <v-card-actions>
-      <v-btn @click="register">Register</v-btn>
+    <v-card-actions class="justify-center">
+      <v-btn @click="register" color="primary">Register</v-btn>
       <v-btn @click="reset">Reset</v-btn>
     </v-card-actions>
   </v-card>

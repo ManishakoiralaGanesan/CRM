@@ -20,11 +20,13 @@
           @click:append="show = !show"
           outlined
         ></v-text-field>
-        <v-btn to="/register" text>Register</v-btn>
-        <v-btn text color="primary" class="right">Forget Password?</v-btn>
+        <v-btn to="/register" text color="primary">Register</v-btn>
+        <v-btn text color="red" class="right">Forget Password?</v-btn>
       </v-card-text>
-      <v-card-actions>
-        <v-btn class="login" @click="login">Login</v-btn>
+      <v-card-actions class="justify-center">
+        <v-btn @click="login" color="primary" width="100" height="40"
+          >Login</v-btn
+        >
       </v-card-actions>
     </v-card>
   </div>
