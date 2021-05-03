@@ -29,7 +29,7 @@ export default {
 
       axiosWithoutToken
         .post(`/user/verify`, {
-          verify_id: parseInt(this.id),
+          verify_id: this.id,
           code: this.otp,
         })
         .then((response) => {
